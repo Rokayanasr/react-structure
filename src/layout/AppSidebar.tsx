@@ -13,8 +13,8 @@ import {
   PlugInIcon,
   TableIcon,
   UserCircleIcon,
-} from "../assets/icons";
-import useSidebar from "../context/Sidebar";
+} from "../icons";
+import { useSidebar } from "../context/SidebarContext";
 import SidebarWidget from "./SidebarWidget";
 
 type NavItem = {
@@ -293,7 +293,7 @@ const AppSidebar: React.FC = () => {
       onMouseLeave={() => setIsHovered(false)}
     >
       <div
-        className={`py-4 flex ${
+        className={`py-8 flex ${
           !isExpanded && !isHovered ? "lg:justify-center" : "justify-start"
         }`}
       >
@@ -302,14 +302,14 @@ const AppSidebar: React.FC = () => {
             <>
               <img
                 className="dark:hidden"
-                src="/images/logo/favicon.png"
+                src="/images/logo/logo.svg"
                 alt="Logo"
-                width={60}
+                width={150}
                 height={40}
               />
               <img
                 className="hidden dark:block"
-                src="/images/logo/favicon.png"
+                src="/images/logo/logo-dark.svg"
                 alt="Logo"
                 width={150}
                 height={40}
@@ -317,7 +317,7 @@ const AppSidebar: React.FC = () => {
             </>
           ) : (
             <img
-              src="/images/logo/favicon.png"
+              src="/images/logo/logo-icon.svg"
               alt="Logo"
               width={32}
               height={32}

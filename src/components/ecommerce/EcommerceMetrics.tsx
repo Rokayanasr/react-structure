@@ -3,7 +3,7 @@ import {
   ArrowUpIcon,
   BoxIconLine,
   GroupIcon,
-} from "../../assets/icons";
+} from "../../icons";
 import Badge from "../ui/badge/Badge";
 
 export default function EcommerceMetrics() {

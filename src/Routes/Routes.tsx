@@ -1,7 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import AppLayout from "../layout/AppLayout";
-import { dashboardRoutes } from "../Modules/Owner/Features/Dashboard/routes";
-import { profileRoutes } from "../Modules/Owner/Features/Profile/routes";
+import { authRoutes } from "../Features/Auth/routes";
+import { dashboardRoutes } from "../Features/Dashboard/routes";
+import { profileRoutes } from "../Features/Profile/routes";
 import NotFound from "../pages/OtherPage/NotFound";
 import Videos from "../pages/UiElements/Videos";
 import Images from "../pages/UiElements/Images";
@@ -23,6 +24,7 @@ const router = createBrowserRouter([
     children: [
       ...dashboardRoutes,
       ...profileRoutes,
+      ...authRoutes,
       // Others Page
       {
         path: "calendar",

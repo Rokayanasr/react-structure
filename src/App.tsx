@@ -1,5 +1,6 @@
-import MainGuard from "./services/guard/MainGard";
+import { RouterProvider } from "react-router-dom";
+import router from "./Routes/Routes";
 
 export default function App() {
-    return <MainGuard />;
+  return <RouterProvider router={router} />;
 }

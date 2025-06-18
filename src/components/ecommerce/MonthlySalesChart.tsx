@@ -2,12 +2,12 @@ import Chart from "react-apexcharts";
 import { ApexOptions } from "apexcharts";
 import { Dropdown } from "../ui/dropdown/Dropdown";
 import { DropdownItem } from "../ui/dropdown/DropdownItem";
-import { MoreDotIcon } from "../../assets/icons";
+import { MoreDotIcon } from "../../icons";
 import { useState } from "react";
 
 export default function MonthlySalesChart() {
   const options: ApexOptions = {
-    colors: ["#1aafc9"],
+    colors: ["#465fff"],
     chart: {
       fontFamily: "Outfit, sans-serif",
       type: "bar",

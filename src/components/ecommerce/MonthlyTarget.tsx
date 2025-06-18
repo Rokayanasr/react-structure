@@ -3,12 +3,12 @@ import { ApexOptions } from "apexcharts";
 import { useState } from "react";
 import { Dropdown } from "../ui/dropdown/Dropdown";
 import { DropdownItem } from "../ui/dropdown/DropdownItem";
-import { MoreDotIcon } from "../../assets/icons";
+import { MoreDotIcon } from "../../icons";
 
 export default function MonthlyTarget() {
   const series = [75.55];
   const options: ApexOptions = {
-    colors: ["#1aafc9"],
+    colors: ["#465FFF"],
     chart: {
       fontFamily: "Outfit, sans-serif",
       type: "radialBar",
@@ -47,7 +47,7 @@ export default function MonthlyTarget() {
     },
     fill: {
       type: "solid",
-      colors: ["#1aafc9"],
+      colors: ["#465FFF"],
     },
     stroke: {
       lineCap: "round",

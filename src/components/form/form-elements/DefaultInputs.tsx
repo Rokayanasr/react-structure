@@ -3,7 +3,7 @@ import ComponentCard from "../../common/ComponentCard";
 import Label from "../Label";
 import Input from "../input/InputField";
 import Select from "../Select";
-import { EyeCloseIcon, EyeIcon, TimeIcon } from "../../../assets/icons/index.ts";
+import { EyeCloseIcon, EyeIcon, TimeIcon } from "../../../icons";
 import DatePicker from "../date-picker.tsx";
 
 export default function DefaultInputs() {
@@ -22,11 +22,11 @@ export default function DefaultInputs() {
       <div className="space-y-6">
         <div>
           <Label htmlFor="input">Input</Label>
-          <Input type="text" id="input" required={false} />
+          <Input type="text" id="input" />
         </div>
         <div>
           <Label htmlFor="inputTwo">Input with Placeholder</Label>
-          <Input type="text" id="inputTwo" placeholder="info@gmail.com" required={false} />
+          <Input type="text" id="inputTwo" placeholder="info@gmail.com" />
         </div>
         <div>
           <Label>Select Input</Label>
@@ -42,7 +42,8 @@ export default function DefaultInputs() {
           <div className="relative">
             <Input
               type={showPassword ? "text" : "password"}
-              placeholder="Enter your password" required={false}            />
+              placeholder="Enter your password"
+            />
             <button
               onClick={() => setShowPassword(!showPassword)}
               className="absolute z-30 -translate-y-1/2 cursor-pointer right-4 top-1/2"
@@ -75,7 +76,8 @@ export default function DefaultInputs() {
               type="time"
               id="tm"
               name="tm"
-              onChange={(e) => console.log(e.target.value)} required={false}            />
+              onChange={(e) => console.log(e.target.value)}
+            />
             <span className="absolute text-gray-500 -translate-y-1/2 pointer-events-none right-3 top-1/2 dark:text-gray-400">
               <TimeIcon className="size-6" />
             </span>
@@ -87,7 +89,8 @@ export default function DefaultInputs() {
             <Input
               type="text"
               placeholder="Card number"
-              className="pl-[62px]" required={false}            />
+              className="pl-[62px]"
+            />
             <span className="absolute left-0 top-1/2 flex h-11 w-[46px] -translate-y-1/2 items-center justify-center border-r border-gray-200 dark:border-gray-800">
               <svg
                 width="20"
